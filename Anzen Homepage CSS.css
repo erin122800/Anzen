@@ -90,6 +90,8 @@ h2{
     text-align: center;
     font-size: 22pt;
     background-color: rgba(245, 245, 245, 0.575);
+    padding: 10px;
+    border-radius: 10px;
 }
 .subcat{
     text-align: center;
@@ -97,22 +99,30 @@ h2{
     margin-right: 50px;
     margin-left: 50px;
     background-color: rgba(245, 245, 245, 0.575);
+    padding: 20px;
+    border-radius: 10px;
 }
 /*Information columns*/
 #solar{
     text-align: center;
     font-size: 16pt;
     background-color: rgba(245, 245, 245, 0.575);
+    padding: 20px;
+    border-radius: 10px;
 }
 #wind{
     text-align: center;
     font-size: 16pt;
     background-color: rgba(245, 245, 245, 0.575);
+    padding: 20px;
+    border-radius: 10px;
 }
 #water{
     text-align: center;
     font-size: 16pt;
     background-color: rgba(245, 245, 245, 0.575);
+    padding: 20px;
+    border-radius: 10px;
 }
 div#informationWrap{
     text-align: center;

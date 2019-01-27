@@ -10,7 +10,6 @@ class Comment {
     pushToDatabase() {
         var data = JSON.stringify(this);
         var xhr = new XMLHttpRequest();
-        xhr.withCredentials = true;
 
         xhr.addEventListener("readystatechange", function () {
             if (this.readyState === 4) {
@@ -75,9 +74,11 @@ function addComment() {
     comments.push(userComment);
     displayComments();
     userComment.pushToDatabase();
+    document.querySelector("#name").value="";
+    document.querySelector("#comment").value="";
 }
 Comment.getCommentsFromDatabase(function (commentsFromDB) {
     comments = commentsFromDB;
     displayComments();
 })
-document.querySelector("#post").addEventListener("click", addComment);
+document.querySelector("#addcomment").addEventListener("submit", addComment);
